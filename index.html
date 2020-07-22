@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/styles/main.css" rel="stylesheet">
-    <link href="styles/home.css" rel="stylesheet">
+    <link href="/styles/home.css" rel="stylesheet">
+    <link href="/styles/modal.css" rel="stylesheet">
+
     <link href="/styles/responsive.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -15,7 +17,7 @@
         <div class="content">
             <header>
                 <img src="/assets/logo.svg" alt="Logomarca">
-                <a href="/"><span></span>Cadastre um ponto de coleta</a>
+                <a href="/create-point.html"><span></span>Cadastre um ponto de coleta</a>
             </header>
 
             <main>
@@ -29,5 +31,29 @@
 
     </div>
 
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Pontos de Coleta</h1>
+                <a href="#">Fechar</a>
+            </div>
+
+            <form action="/search-results.html">
+                <label for="search">Cidade</label>
+                <div class="search field">
+                    <input 
+                    type="text" 
+                    name="search"
+                    placeholder="Pesquise por Cidade"
+                    >
+                    <button>
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
