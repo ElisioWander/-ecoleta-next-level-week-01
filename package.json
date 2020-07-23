@@ -1,0 +1,25 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElisioWander/-next-level-week-01.git"
+  },
+  "keywords": [],
+  "author": "Elisio Wander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElisioWander/-next-level-week-01/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
