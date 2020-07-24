@@ -1,41 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/main.css" rel="stylesheet">
+{% extends "layout.html" %}
+
+
+{% set pageId = "page-home" %}
+
+
+{% block styles %}
     <link href="/styles/home.css" rel="stylesheet">
     <link href="/styles/modal.css" rel="stylesheet">
+{% endblock styles %}
 
-    <link href="/styles/responsive.css" rel="stylesheet">
-    <title>Document</title>
-</head>
 
-<body>
-    <div id="page-home">
+{% block content %}
+    <div class="content">
+        <header>
+            <img src="/assets/logo.svg" alt="Logomarca">
+            <a href="/create-point">
+                <span></span>Cadastre um ponto de coleta</a>
+        </header>
 
-        <div class="content">
-            <header>
-                <img src="/assets/logo.svg" alt="Logomarca">
-                <a href="/create-point"><span></span>Cadastre um ponto de coleta</a>
-            </header>
+        <main>
+            <h1>Seu marketplace de coleta e resíduos</h1>
 
-            <main>
-                <h1>Seu marketplace de coleta e resíduos</h1>
-    
-                <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
-    
-                <a href="#"><span></span><strong>Pesquisar ponto de coleta</strong></a>
-            </main>
-        </div>
+            <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
 
+            <a href="#">
+                <span></span>
+                <strong>Pesquisar ponto de coleta</strong>
+            </a>
+        </main>
     </div>
+{% endblock content %}
 
-    {# modal #}
+
+{% block modal %}
     {% include "partials/modal.html" %}
-    {# modal #}
-    
+{% endblock modal %}
 
+
+{% block script %}
     <script src="/scripts/index.js"></script>
-</body>
-</html>
+{% endblock script %}
