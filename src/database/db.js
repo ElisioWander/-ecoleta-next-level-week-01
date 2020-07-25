@@ -5,7 +5,7 @@ const sqlite3 = require("sqlite3").verbose()
 
 const db = new sqlite3.Database("./src/database/database.db")
 
-// db.serialize(() => {
+db.serialize(() => {
 
 //     // //criar uma tabela
 //     // db.run(`
@@ -56,24 +56,24 @@ const db = new sqlite3.Database("./src/database/database.db")
 //     // db.run(query, values, afterInsertData)
 
     
-//     // //consutar os dados na tabela
-//     // db.all(`SELECT * FROM places`, function(err, rows) {
-//     //     if (err) {
-//     //         return console.log(err)
-//     //     }
+    //consutar os dados na tabela
+    // db.all(`SELECT * FROM places`, function(err, rows) {
+    //     if (err) {
+    //         return console.log(err)
+    //     }
 
-//     //     console.log("Aqui estão os seus registros")
-//     //     console.log(rows)
-//     // })
+    //     console.log("Aqui estão os seus registros")
+    //     console.log(rows)
+    // })
 
-//     // deletar dados na tabela
-//     // db.run(`DELETE FROM places WHERE id = ?`, [3], function(err) {
-//     //     if (err) {
-//     //         console.log(err)
-//     //     }
+    // deletar dados na tabela
+    db.run(`DELETE FROM places WHERE id = ?`, [6], function(err) {
+        if (err) {
+            console.log(err)
+        }
 
-//     //     console.log("Registro deletado com sucesso")
-//     // })
-// })
+        console.log("Registro deletado com sucesso")
+    })
+})
 
 module.exports = db
