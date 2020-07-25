@@ -1,5 +1,6 @@
 const express = require("express")
 const nunjucks = require("nunjucks")
+const db = require("./database/db")
 
 const server = express()
 
@@ -19,11 +20,30 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
+    
+    console.log(req.query)
+
     return res.render("create-point.html")
 })
 
+server.post("/save-point", (req, res) => {
+    return res.send("okay")
+})
+
 server.get("/search", (req, res) => {
-    return res.render("search-results.html")
+
+    db.all(`SELECT * FROM places`, function(err, rows) {
+        if (err) {
+            console.log(err)
+        }
+
+        console.log("Aqui estão todos os seus registros")
+        console.log(rows)
+
+        const total = rows.length
+
+        return res.render("search-results.html", { places: rows, total: total })
+    })
 })
 
 server.listen(3000)
