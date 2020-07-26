@@ -65,15 +65,18 @@ db.serialize(() => {
     //     console.log("Aqui estão os seus registros")
     //     console.log(rows)
     // })
+   
 
     // // deletar dados na tabela
-    // db.run(`DELETE FROM places WHERE id = ?`, [13], function(err) {
+    // db.run(`DELETE FROM places WHERE id = ?`, [18], function(err) {
     //     if (err) {
     //         console.log(err)
     //     }
 
     //     console.log("Registro deletado com sucesso")
     // })
+
+    
 })
 
 module.exports = db
