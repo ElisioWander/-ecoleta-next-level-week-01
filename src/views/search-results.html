@@ -38,11 +38,13 @@
                         <h1>{{ place.name }}</h1>
                         <h3>{{ place.items }}</h3>
                         <p>
-                            {{ place.state }}, {{ place.city }}
+                            <strong>{{"Estado:"}}</strong> {{ place.state }} 
                             <br/>
-                            {{ place.address }}
+                            <strong>{{ "Cidade:" }}</strong> {{ place.city }}
                             <br/>
-                            {{ place.address2 }}
+                            <strong>{{ "Bairro:" }}</strong> {{ place.address }}
+                            <br/>
+                            <strong>{{"N°:"}}</strong> {{ place.address2 }}
                         </p>
                     </div>
 

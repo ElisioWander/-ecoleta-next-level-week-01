@@ -56,7 +56,7 @@ db.serialize(() => {
 //     // db.run(query, values, afterInsertData)
 
     
-    //consutar os dados na tabela
+    // consutar os dados na tabela
     // db.all(`SELECT * FROM places`, function(err, rows) {
     //     if (err) {
     //         return console.log(err)
@@ -66,14 +66,14 @@ db.serialize(() => {
     //     console.log(rows)
     // })
 
-    // deletar dados na tabela
-    db.run(`DELETE FROM places WHERE id = ?`, [6], function(err) {
-        if (err) {
-            console.log(err)
-        }
+    // // deletar dados na tabela
+    // db.run(`DELETE FROM places WHERE id = ?`, [13], function(err) {
+    //     if (err) {
+    //         console.log(err)
+    //     }
 
-        console.log("Registro deletado com sucesso")
-    })
+    //     console.log("Registro deletado com sucesso")
+    // })
 })
 
 module.exports = db

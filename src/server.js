@@ -23,8 +23,6 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
-    
-    console.log(req.query)
 
     return res.render("create-point.html")
 })
@@ -55,13 +53,14 @@ server.post("/save-point", (req, res) => {
 
     function afterInsertData(err) {
         if (err) {
-            return console.log(err)
+            console.log(err)
+            return res.render("partials/error-create.html")
         }
 
         console.log("Cadastrado com sucesso")
         console.log(this)
 
-        return res.send("okay")
+        return res.render("create-point.html", { saved: true })
     }
 
     db.run(query, values, afterInsertData)
@@ -70,7 +69,14 @@ server.post("/save-point", (req, res) => {
 
 server.get("/search", (req, res) => {
 
-    db.all(`SELECT * FROM places`, function(err, rows) {
+    const search = req.query.search
+
+    if (search == "") {
+        return res.render("search-results.html", { total: 0 })
+    }
+
+
+    db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err, rows) {
         if (err) {
             console.log(err)
         }
