@@ -9,7 +9,7 @@
 </h1>
 
 ## 🏷️ Sobre 
-**Ecoleta** é uma aplicação desenvolvida para ajudar pessoas a encontrar locais de coleta e reciclagem de lixo em sua cidade. O projeto foi desenvolvido durante o evento Next Level Week, feito pela 🚀[Rocketseat](https://rocketseat.com.br/) e ministrado pelo professor [Mayk Brito](https://github.com/maykbrito) 
+**Ecoleta** é uma aplicação desenvolvida para ajudar pessoas a encontrarem locais de coleta e reciclagem de lixo em sua cidade. O projeto foi desenvolvido durante o evento Next Level Week, feito pela 🚀[Rocketseat](https://rocketseat.com.br/) e ministrado pelo professor [Mayk Brito](https://github.com/maykbrito) 
 
 ---
 
