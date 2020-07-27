@@ -24,7 +24,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Ecole
 
 ---
 
-## 🗂️ Como baixar o projeto
+## 🗂️ Como baixar e iniciar o projeto e 
 
 ```bash
 
@@ -40,6 +40,10 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Ecole
     #iniciar a aplicação
     $ npm start
 ```
+### Servidor local
+localhost:3000
+
+---
 
 ## Autor
 ### 👤 Elisio Wander
