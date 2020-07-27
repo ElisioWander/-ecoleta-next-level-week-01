@@ -11,7 +11,7 @@ nunjucks.configure("src/views", {
 
 
 //configurar pasta public para que fique disponível
-//como se estivisse na pasta raíz do projeto
+//como se estivisse na pasta raíz
 server.use(express.static("public"))
 
 //habilitar o uso do REQ.BODY na nossa aplicação
