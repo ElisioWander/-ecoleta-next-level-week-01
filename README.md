@@ -50,6 +50,9 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Ecole
 
 ---
 ## 📝 Licença
+Copyright © 2020 [@ElisioWander](https://github.com/ElisioWander/-ecoleta-next-level-week-01/blob/master/LICENSE)
+
+Este projeto está sobe a [LICENÇA MIT](https://opensource.org/licenses/MIT)
 ---
 
 ### Desenvolvido 💜 by Elisio Wander
