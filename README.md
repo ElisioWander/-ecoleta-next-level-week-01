@@ -20,7 +20,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Ecole
 - CSS
 - JavaScript
 - Node.js
-- Nunjuks
+- Nunjucks
 
 ---
 
