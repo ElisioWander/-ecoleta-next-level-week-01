@@ -21,6 +21,7 @@ Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Ecole
 - JavaScript
 - Node.js
 - Nunjucks
+- SQLite3
 
 ---
 
